@@ -14,3 +14,4 @@ RUN apt-get install --assume-yes nodejs
 
 USER $user_name
 WORKDIR /home/$user_name
+RUN echo 'PS1="\[\033[01;31m\]LISK-SDK-ENV\[\033[00m\] - \[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] "' >> .bashrc
